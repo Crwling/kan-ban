@@ -50,7 +50,7 @@ const BoardItem: React.FC<IBoardProps> = ({ board, index }) => {
     })
   })
   
-  const [{ handlerId }, drop] = useDrop<
+  const [, drop] = useDrop<
     DragItem,
     void,
     { handlerId: Identifier | null }

@@ -48,7 +48,7 @@ const TaskItem: React.FC<ITaskProps> = ({ task, index, boardIndex }) => {
     })
   })
   
-  const [{ handlerId }, drop] = useDrop<
+  const [, drop] = useDrop<
     DragTask,
     void,
     { handlerId: Identifier | null }
